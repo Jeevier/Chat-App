@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+/* CHAT STYLES */
+* {
+  font-family: Avenir, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  letter-spacing: 0.5px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* FORM STYLES */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62,5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.wrapper {
+  position: relative;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  background-position: center;
+   /* background-color: #c0c0c0;  */
+   
+ 
+  /* background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);   */
+ 
+}
+
+.input {
+  color: rgb(250, 250, 250);
+  font-size: 1.2rem;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+  border:none;
+  border-bottom: 1px solid black;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+::placeholder {
+  color: rgb(255, 251, 251);
+}
+
+.form {
+  width: 400px;
+  background: rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  padding: 2rem;
+  box-shadow: 0 0 16px 0 rgb(0,0,0,0.5);
+  border-radius:50px;
+  
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  font-size: 2.3em;
+  color: #0009;
+  
+}
+
+.button {
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(58, 150, 255);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 22px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.4s;
+  cursor: pointer;
+  margin: 5px;
+  width: 90%;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.4s;
+}
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.error {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  text-align: center;
+  margin-top: 20px;
 }
