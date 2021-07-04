@@ -1,6 +1,6 @@
 
 # Project Link: [Link](https://justchatit.netlify.app/)
-Person1 username:will password:123456789
+Person1 username:will password:123456789\
 Person2 username:rock password:123456789
 
 # Getting Started with Create React App
