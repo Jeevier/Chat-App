@@ -1,3 +1,8 @@
+
+# Project Link: [Link](https://justchatit.netlify.app/)
+Person1 username:will password:123456789
+Person2 username:rock password:123456789
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
