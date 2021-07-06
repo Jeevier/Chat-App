@@ -66,10 +66,28 @@
 }
 
 .form__video-button {
+  /* margin: 1rem 0; 
+ display:grid;
+ grid-template-columns: 1fr auto 20fr;
+ justify-items:center;
+ align-items: center; */
+ display:flex;
+ justify-content: space-between;
+ align-items: center;
+ margin: 1rem 0;
+}
+.logout-btn{
+ color:rgb(255, 19, 19);
+ font-size: 1.3rem ;
+ 
+}
+.logout-text{
+  color: rgb(255, 19, 19);
+  cursor: pointer;
+}
+.logout-container
+{
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 1rem 0;
 }
 .button {
   border-radius: 50px;
@@ -98,6 +116,7 @@
   text-transform: uppercase;
   cursor: pointer;
   width: 40%;
+
 }
 
 .button-video:hover {

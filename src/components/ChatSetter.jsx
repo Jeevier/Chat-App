@@ -16,10 +16,12 @@ const ChatSetter = () => {
         method="get"
         target="_blank"
       >
-        <LogoutOutlined
-          style={{ color: "red", fontSize: "1.3rem" }}
-          onClick={logoutHandler}
-        />
+        <div className="logout-container">
+          <LogoutOutlined className="logout-btn" onClick={logoutHandler} />
+          <p onClick={logoutHandler} className="logout-text">
+            &nbsp;Logout
+          </p>
+        </div>
         <button className="button-video">
           <PlayCircleOutlined /> Video Call
         </button>
