@@ -12,7 +12,7 @@ const ChatSetter = () => {
       <NewMessageForm />
       <form
         className="form__video-button"
-        action="https://viochat.tech/"
+        action="https://justvideoit.netlify.app/"
         method="get"
         target="_blank"
       >
